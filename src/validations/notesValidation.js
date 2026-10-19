@@ -30,7 +30,7 @@ export const createNoteSchema = {
     }),
     content: Joi.string().allow(''),
     tag: Joi.string().valid(...TAGS),
-  }),
+  }).required(),
 };
 
 export const updateNoteSchema = {
